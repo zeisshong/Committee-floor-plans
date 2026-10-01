@@ -22,7 +22,7 @@ jobs:
       - name: Assemble public files only
         run: |
           mkdir public
-          cp index.html style.css app.js google-auth.js google-config.js parking-plans.js residential-plans.js README.md public/
+          cp index.html style.css app.js google-auth.js google-config.js parking-plans.js residential-plans.js README.md privacy.html help.html info.css public/
           cp 1f-source.jpg 2f-source.jpg 3f-source.jpg 4f-source.jpg b1-source.jpg b2-source.jpg b3-source.jpg public/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
