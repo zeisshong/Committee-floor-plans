@@ -1,0 +1,32 @@
+name: Publish floor plans
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: floor-plans-pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: node app.test.js && node google-auth.test.js
+      - name: Assemble public files only
+        run: |
+          mkdir public
+          cp index.html style.css app.js google-auth.js google-config.js parking-plans.js residential-plans.js README.md public/
+          cp 1f-source.jpg 2f-source.jpg 3f-source.jpg 4f-source.jpg b1-source.jpg b2-source.jpg b3-source.jpg public/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+        id: deployment

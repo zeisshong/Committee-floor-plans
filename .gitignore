@@ -1,0 +1,6 @@
+public/
+.DS_Store
+*.csv
+!example.csv
+*.json
+.env*
