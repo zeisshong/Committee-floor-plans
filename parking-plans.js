@@ -1,5 +1,873 @@
-// Digitized from the supplied B2/B3 plan images. Coordinates use the app's 1888 × 1335 viewBox.
+// Digitized car spaces from supplied B1/B2/B3 plans; viewBox 1888 x 1335.
 const BASEMENT_MARKS = [
+  {
+    "id": "plan-B1-257",
+    "floor": "B1",
+    "label": "257",
+    "kind": "parking",
+    "key": "B1-257",
+    "verified": true,
+    "box": [
+      333,
+      925,
+      40,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-256",
+    "floor": "B1",
+    "label": "256",
+    "kind": "parking",
+    "key": "B1-256",
+    "verified": true,
+    "box": [
+      389,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-255",
+    "floor": "B1",
+    "label": "255",
+    "kind": "parking",
+    "key": "B1-255",
+    "verified": true,
+    "box": [
+      423,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-254",
+    "floor": "B1",
+    "label": "254",
+    "kind": "parking",
+    "key": "B1-254",
+    "verified": true,
+    "box": [
+      457,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-253",
+    "floor": "B1",
+    "label": "253",
+    "kind": "parking",
+    "key": "B1-253",
+    "verified": true,
+    "box": [
+      513,
+      925,
+      36,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-252",
+    "floor": "B1",
+    "label": "252",
+    "kind": "parking",
+    "key": "B1-252",
+    "verified": true,
+    "box": [
+      574,
+      925,
+      32,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-251",
+    "floor": "B1",
+    "label": "251",
+    "kind": "parking",
+    "key": "B1-251",
+    "verified": true,
+    "box": [
+      608,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-250",
+    "floor": "B1",
+    "label": "250",
+    "kind": "parking",
+    "key": "B1-250",
+    "verified": true,
+    "box": [
+      642,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-249",
+    "floor": "B1",
+    "label": "249",
+    "kind": "parking",
+    "key": "B1-249",
+    "verified": true,
+    "box": [
+      691,
+      925,
+      34,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-248",
+    "floor": "B1",
+    "label": "248",
+    "kind": "parking",
+    "key": "B1-248",
+    "verified": true,
+    "box": [
+      728,
+      925,
+      34,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-247",
+    "floor": "B1",
+    "label": "247",
+    "kind": "parking",
+    "key": "B1-247",
+    "verified": true,
+    "box": [
+      765,
+      925,
+      34,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-246",
+    "floor": "B1",
+    "label": "246",
+    "kind": "parking",
+    "key": "B1-246",
+    "verified": true,
+    "box": [
+      815,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-245",
+    "floor": "B1",
+    "label": "245",
+    "kind": "parking",
+    "key": "B1-245",
+    "verified": true,
+    "box": [
+      850,
+      925,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-263",
+    "floor": "B1",
+    "label": "263",
+    "kind": "parking",
+    "key": "B1-263",
+    "verified": true,
+    "box": [
+      240,
+      559,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-262",
+    "floor": "B1",
+    "label": "262",
+    "kind": "parking",
+    "key": "B1-262",
+    "verified": true,
+    "box": [
+      240,
+      592,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-261",
+    "floor": "B1",
+    "label": "261",
+    "kind": "parking",
+    "key": "B1-261",
+    "verified": true,
+    "box": [
+      240,
+      626,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-260",
+    "floor": "B1",
+    "label": "260",
+    "kind": "parking",
+    "key": "B1-260",
+    "verified": true,
+    "box": [
+      240,
+      805,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-259",
+    "floor": "B1",
+    "label": "259",
+    "kind": "parking",
+    "key": "B1-259",
+    "verified": true,
+    "box": [
+      240,
+      838,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-258",
+    "floor": "B1",
+    "label": "258",
+    "kind": "parking",
+    "key": "B1-258",
+    "verified": true,
+    "box": [
+      240,
+      871,
+      79,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-264",
+    "floor": "B1",
+    "label": "264",
+    "kind": "parking",
+    "key": "B1-264",
+    "verified": true,
+    "box": [
+      406,
+      559,
+      78,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-265",
+    "floor": "B1",
+    "label": "265",
+    "kind": "parking",
+    "key": "B1-265",
+    "verified": true,
+    "box": [
+      406,
+      592,
+      78,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-266",
+    "floor": "B1",
+    "label": "266",
+    "kind": "parking",
+    "key": "B1-266",
+    "verified": true,
+    "box": [
+      406,
+      626,
+      78,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-267",
+    "floor": "B1",
+    "label": "267",
+    "kind": "parking",
+    "key": "B1-267",
+    "verified": true,
+    "box": [
+      406,
+      684,
+      78,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-268",
+    "floor": "B1",
+    "label": "268",
+    "kind": "parking",
+    "key": "B1-268",
+    "verified": true,
+    "box": [
+      406,
+      719,
+      78,
+      32
+    ]
+  },
+  {
+    "id": "plan-B1-289",
+    "floor": "B1",
+    "label": "289",
+    "kind": "parking",
+    "key": "B1-289",
+    "verified": true,
+    "box": [
+      696,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-290",
+    "floor": "B1",
+    "label": "290",
+    "kind": "parking",
+    "key": "B1-290",
+    "verified": true,
+    "box": [
+      731,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-291",
+    "floor": "B1",
+    "label": "291",
+    "kind": "parking",
+    "key": "B1-291",
+    "verified": true,
+    "box": [
+      767,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-292",
+    "floor": "B1",
+    "label": "292",
+    "kind": "parking",
+    "key": "B1-292",
+    "verified": true,
+    "box": [
+      818,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-293",
+    "floor": "B1",
+    "label": "293",
+    "kind": "parking",
+    "key": "B1-293",
+    "verified": true,
+    "box": [
+      854,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-294",
+    "floor": "B1",
+    "label": "294",
+    "kind": "parking",
+    "key": "B1-294",
+    "verified": true,
+    "box": [
+      889,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-295",
+    "floor": "B1",
+    "label": "295",
+    "kind": "parking",
+    "key": "B1-295",
+    "verified": true,
+    "box": [
+      937,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-296",
+    "floor": "B1",
+    "label": "296",
+    "kind": "parking",
+    "key": "B1-296",
+    "verified": true,
+    "box": [
+      973,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-297",
+    "floor": "B1",
+    "label": "297",
+    "kind": "parking",
+    "key": "B1-297",
+    "verified": true,
+    "box": [
+      1009,
+      523,
+      33,
+      75
+    ]
+  },
+  {
+    "id": "plan-B1-288",
+    "floor": "B1",
+    "label": "288",
+    "kind": "parking",
+    "key": "B1-288",
+    "verified": true,
+    "box": [
+      578,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-287",
+    "floor": "B1",
+    "label": "287",
+    "kind": "parking",
+    "key": "B1-287",
+    "verified": true,
+    "box": [
+      613,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-286",
+    "floor": "B1",
+    "label": "286",
+    "kind": "parking",
+    "key": "B1-286",
+    "verified": true,
+    "box": [
+      648,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-285",
+    "floor": "B1",
+    "label": "285",
+    "kind": "parking",
+    "key": "B1-285",
+    "verified": true,
+    "box": [
+      729,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-284",
+    "floor": "B1",
+    "label": "284",
+    "kind": "parking",
+    "key": "B1-284",
+    "verified": true,
+    "box": [
+      765,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-283",
+    "floor": "B1",
+    "label": "283",
+    "kind": "parking",
+    "key": "B1-283",
+    "verified": true,
+    "box": [
+      817,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-282",
+    "floor": "B1",
+    "label": "282",
+    "kind": "parking",
+    "key": "B1-282",
+    "verified": true,
+    "box": [
+      852,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-281",
+    "floor": "B1",
+    "label": "281",
+    "kind": "parking",
+    "key": "B1-281",
+    "verified": true,
+    "box": [
+      888,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-280",
+    "floor": "B1",
+    "label": "280",
+    "kind": "parking",
+    "key": "B1-280",
+    "verified": true,
+    "box": [
+      938,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-279",
+    "floor": "B1",
+    "label": "279",
+    "kind": "parking",
+    "key": "B1-279",
+    "verified": true,
+    "box": [
+      973,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-278",
+    "floor": "B1",
+    "label": "278",
+    "kind": "parking",
+    "key": "B1-278",
+    "verified": true,
+    "box": [
+      1009,
+      684,
+      33,
+      70
+    ]
+  },
+  {
+    "id": "plan-B1-269",
+    "floor": "B1",
+    "label": "269",
+    "kind": "parking",
+    "key": "B1-269",
+    "verified": true,
+    "box": [
+      694,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-270",
+    "floor": "B1",
+    "label": "270",
+    "kind": "parking",
+    "key": "B1-270",
+    "verified": true,
+    "box": [
+      729,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-271",
+    "floor": "B1",
+    "label": "271",
+    "kind": "parking",
+    "key": "B1-271",
+    "verified": true,
+    "box": [
+      765,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-272",
+    "floor": "B1",
+    "label": "272",
+    "kind": "parking",
+    "key": "B1-272",
+    "verified": true,
+    "box": [
+      816,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-273",
+    "floor": "B1",
+    "label": "273",
+    "kind": "parking",
+    "key": "B1-273",
+    "verified": true,
+    "box": [
+      852,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-274",
+    "floor": "B1",
+    "label": "274",
+    "kind": "parking",
+    "key": "B1-274",
+    "verified": true,
+    "box": [
+      888,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-275",
+    "floor": "B1",
+    "label": "275",
+    "kind": "parking",
+    "key": "B1-275",
+    "verified": true,
+    "box": [
+      938,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-276",
+    "floor": "B1",
+    "label": "276",
+    "kind": "parking",
+    "key": "B1-276",
+    "verified": true,
+    "box": [
+      973,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-277",
+    "floor": "B1",
+    "label": "277",
+    "kind": "parking",
+    "key": "B1-277",
+    "verified": true,
+    "box": [
+      1009,
+      762,
+      33,
+      74
+    ]
+  },
+  {
+    "id": "plan-B1-303",
+    "floor": "B1",
+    "label": "303",
+    "kind": "parking",
+    "key": "B1-303",
+    "verified": true,
+    "box": [
+      408,
+      756,
+      27,
+      80
+    ]
+  },
+  {
+    "id": "plan-B1-302",
+    "floor": "B1",
+    "label": "302",
+    "kind": "parking",
+    "key": "B1-302",
+    "verified": true,
+    "box": [
+      460,
+      756,
+      26,
+      80
+    ]
+  },
+  {
+    "id": "plan-B1-311",
+    "floor": "B1",
+    "label": "311",
+    "kind": "parking",
+    "key": "B1-311",
+    "verified": true,
+    "box": [
+      591,
+      758,
+      27,
+      77
+    ]
+  },
+  {
+    "id": "plan-B1-310",
+    "floor": "B1",
+    "label": "310",
+    "kind": "parking",
+    "key": "B1-310",
+    "verified": true,
+    "box": [
+      643,
+      758,
+      26,
+      77
+    ]
+  },
+  {
+    "id": "plan-B1-299",
+    "floor": "B1",
+    "label": "299",
+    "kind": "parking",
+    "key": "B1-299",
+    "verified": true,
+    "box": [
+      1128,
+      677,
+      29,
+      33
+    ]
+  },
+  {
+    "id": "plan-B1-300",
+    "floor": "B1",
+    "label": "300",
+    "kind": "parking",
+    "key": "B1-300",
+    "verified": true,
+    "box": [
+      1128,
+      711,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "plan-B1-301",
+    "floor": "B1",
+    "label": "301",
+    "kind": "parking",
+    "key": "B1-301",
+    "verified": true,
+    "box": [
+      1128,
+      743,
+      29,
+      30
+    ]
+  },
+  {
+    "id": "plan-B1-298",
+    "floor": "B1",
+    "label": "298",
+    "kind": "parking",
+    "key": "B1-298",
+    "verified": true,
+    "box": [
+      1304,
+      661,
+      29,
+      82
+    ]
+  },
+  {
+    "id": "plan-B1-309",
+    "floor": "B1",
+    "label": "309",
+    "kind": "parking",
+    "key": "B1-309",
+    "verified": false,
+    "box": [
+      1255,
+      661,
+      29,
+      82
+    ]
+  },
   {
     "id": "plan-B2-150",
     "floor": "B2",
